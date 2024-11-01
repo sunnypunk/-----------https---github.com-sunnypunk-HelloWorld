@@ -62,11 +62,9 @@ button {
   gap: 32px;
   margin-top: 72px;
 }
-.game__cards-bottom {
-  display: flex;
-  flex-wrap: wrap;
+.game__cards_bottom {
   align-items: flex-end;
-  gap: 32px;
+  margin-top: 0;
 }
 .game__card {
   width: 378px;
@@ -78,25 +76,11 @@ button {
   border-radius: 30px;
   position: relative;
 }
-.game__card-long {
-  width: 378px;
+.game__card_long {
   height: 512px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border-radius: 30px;
-  position: relative;
 }
-.game__card-longer {
-  width: 378px;
+.game__card_longer {
   height: 551px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border-radius: 30px;
-  position: relative;
 }
 .game__link {
   position: absolute;
@@ -137,4 +121,39 @@ button {
   font-weight: 700;
   margin-bottom: 36px;
   margin-left: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .hero-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 147px;
+    padding-bottom: 182px;
+    background-image: url(./img/StarMobile.png), url(./img/Star2.png), url(./img/Star3.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right top, calc(100% - 79px) calc(100% - 34px), 64px 37px;
+    background-size: auto, 100px, 100px;
+  }
+  .hero-page__title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 48.76px;
+    max-width: 262px;
+    margin-bottom: 24px;
+  }
+  .hero-page__subtitle {
+    font-size: 16px;
+    line-height: 19.5px;
+    max-width: 296px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
