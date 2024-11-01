@@ -63,13 +63,10 @@ button {
         flex-wrap: wrap;
         gap: 32px;
         margin-top: 72px;
-    }
-
-    &__cards-bottom {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        gap: 32px;  
+        &_bottom {
+            align-items: flex-end;
+            margin-top: 0;
+        }
     }
 
     &__card {
@@ -81,30 +78,14 @@ button {
         justify-content: flex-end;
         border-radius: 30px;
         position: relative;
-    }
-
-    &__card-long {
-        width: 378px;
-        height: 512px;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        border-radius: 30px;
-        position: relative;
-
-    }
-
-    &__card-longer {
-        width: 378px;
-        height: 551px;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        border-radius: 30px;
-        position: relative;
-
+        &_long {
+            height: 512px;
+        }
+    
+        &_longer {
+            height: 551px;
+    
+        }
     }
 
     &__link {
@@ -152,3 +133,5 @@ button {
         margin-left: 32px;
     }
 }
+
+@import 'mobile';
